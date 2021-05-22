@@ -1,0 +1,100 @@
+/*variáveis*/
+:root{
+    --backgroundColor: black;
+    --cardColor: #fff;
+    --shadowColor: rgba(0, 0, 0, 0.2);
+}
+
+/*fontes*/
+h1{
+    color: red;
+}
+/*reset*/
+html, body{
+    margin:0;
+    height: 100%;
+}
+
+/*estilos básicos*/
+
+header{
+    padding: 40px;
+    text-align: center;
+}
+
+body{
+    background-color: var(--backgroundColor);
+   
+}
+/*mobile*/
+.flex-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+#content {
+    justify-content: center;
+    display:grid;
+    margin: 0px;
+    padding: 0px;
+    grid-template-areas: "h h h"
+                         "a m m"
+                         "f f f";
+    
+    border-radius: 15px;
+    color: black;
+}
+
+.card{
+    text-align: left;
+    background-color:var(--cardColor) ;
+    width: 200px;
+    height: 250px;
+    padding: 20px;
+    border-radius: 20px;
+}
+.cadastrados{
+    margin-top: 150px;
+    background-color:black;
+    text-align: center;
+    min-height: 600px;
+    border-radius: 20px;
+    padding-top: 15px;
+    border-color: red;
+    border-style: solid;
+}
+form{
+    text-align: center;
+    background-color: var(--cardColor);
+    border-radius: 10px;
+    padding: 20px;
+    width: 40%;
+    height: 400px;
+    box-shadow: 0 0 10px var(--shadowColor);
+}
+label{
+    text-align: start; /*mudar isso e ver se vai botar nome no canto e input ao lado*/
+}
+button{
+    width: 100px;
+    height: 30px;
+    font-size: medium;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+div{
+    margin: 10px;
+}
+
+@media only screen and (min-width : 1200px) {
+    #content{
+       justify-content: center;
+       display: grid;
+       grid-template-areas: "h h h h h"
+                            "a m m m m"
+                            "f f f f f";
+     }
+     }
+

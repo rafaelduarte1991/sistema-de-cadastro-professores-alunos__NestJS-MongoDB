@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'/>
+        <title>Integração</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+        <script src="js/main.js"></script>
+    </head>
+    <header>
+        <h1>Sistema de Cadastro de Professores</h1>
+    </header>
+    <body>
+        
+    <div class="flex-box">
+        <form>
+            <h3>Cadastro Professores</h3>
+            <p>
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome"/>
+            </p>
+            <p>
+                <label for="drt">DRT:</label><br>
+                <input type="text" id="drt"/>
+            </p>
+            <p>
+                <label for="disciplinas">Disciplinas:</label><br>
+                <input type="text" id="disciplinas"/>
+            </p>
+            <p>
+                <label for="departamento">Departamento:</label><br>
+                <input type="text" id="departamento"/>
+            </p>
+            <button id='button' onclick='insertProfessor()'>Inserir</button>
+        </form>
+    </div>
+    <div class="cadastrados">
+        <h1>Lista de Professores Cadastrados</h1>
+        <section id='content'></section> 
+    </div>
+    </body>
+</html>
